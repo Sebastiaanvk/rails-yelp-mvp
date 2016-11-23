@@ -13,7 +13,8 @@ Restaurant.destroy_all
   restaurant = Restaurant.create(
     name: Faker::Hipster.word,
     address: Faker::Address.street_address,
-    tel: Faker::PhoneNumber.phone_number,
-    catagory: "chinese"
+    phone_number: Faker::PhoneNumber.phone_number,
+    category: "chinese"
   )
 end
+

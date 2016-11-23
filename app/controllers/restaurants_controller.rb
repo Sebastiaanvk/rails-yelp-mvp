@@ -48,7 +48,7 @@ class RestaurantsController < ApplicationController
         format.html { render :edit }
         format.json { render json: @restaurant.errors, status: :unprocessable_entity }
       end
-    end
+ 4   end
   end
 
   # DELETE /restaurants/1
@@ -69,6 +69,6 @@ class RestaurantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :address, :tel, :catagory)
+      params.require(:restaurant).permit(:name, :address, :phone_number, :category)
     end
 end
